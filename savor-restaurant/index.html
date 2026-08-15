@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Savor modern restaurant website" />
+    <title>Savor Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pageLoader" class="page-loader">
+      <div><span>SAVOR</span><small>SETTING THE TABLE</small></div>
+    </div>
+    <div id="scrollProgress" class="scroll-progress"></div>
+    <div class="cursor-dot"></div>
+    <header>
+      <a class="logo" href="#">SAVOR<span>●</span></a>
+      <nav>
+        <a href="#menu">Menu</a><a href="#story">Our story</a
+        ><a href="#visit">Visit</a>
+      </nav>
+      <button id="bookTop" class="outline">Book a table</button
+      ><button id="menuToggle" class="menu-toggle">☰</button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">SEASONAL KITCHEN • OPEN DAILY</p>
+          <h1>Good food.<br /><i>Shared slowly.</i></h1>
+          <p>
+            Thoughtful plates inspired by the Mediterranean, made with
+            ingredients from growers we know.
+          </p>
+          <div>
+            <a href="#menu" class="button">Explore the menu</a
+            ><button class="text-btn book">Reserve a table →</button>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="plate"><div class="food">🥗</div></div>
+          <div class="note">Tonight’s favorite<br /><b>Garden mezze</b></div>
+        </div>
+      </section>
+      <section class="marquee" aria-label="Restaurant values">
+        <span>LOCAL INGREDIENTS</span><b>✦</b><span>OPEN FIRE COOKING</span
+        ><b>✦</b><span>GOOD COMPANY</span><b>✦</b><span>SEASONAL MENUS</span>
+      </section>
+      <section id="menu" class="menu">
+        <div class="menu-intro">
+          <div>
+            <p class="kicker">FROM OUR KITCHEN</p>
+            <h2>A menu that moves<br />with the seasons.</h2>
+          </div>
+          <p>
+            Browse dishes from around the world. Our menu is fetched live from
+            TheMealDB and thoughtfully presented for easy discovery.
+          </p>
+        </div>
+        <div class="menu-tools">
+          <div id="mealCategories" class="categories"></div>
+          <label
+            >Search the menu
+            <input
+              id="mealSearch"
+              type="search"
+              placeholder="Try pasta, chicken..."
+          /></label>
+        </div>
+        <div id="mealStatus" class="loading">Preparing today’s menu…</div>
+        <div id="mealGrid" class="meal-grid"></div>
+        <button id="loadMore" class="outline center">Show more dishes</button>
+      </section>
+      <section id="story" class="story">
+        <div class="story-photo"><span>EST. 2018</span></div>
+        <div>
+          <p class="kicker">OUR STORY</p>
+          <h2>Food tastes better when it means something.</h2>
+          <p>
+            Savor began around one long table. Today, we still cook the same
+            way: close to the seasons, generous with flavor, and always for
+            sharing.
+          </p>
+          <ul>
+            <li><b>27</b> local producers</li>
+            <li><b>90%</b> seasonal ingredients</li>
+            <li><b>1</b> very long table</li>
+          </ul>
+        </div>
+      </section>
+      <section class="quote-section reveal">
+        <p>“A meal should feel like a place you want to return to.”</p>
+        <span>— THE SAVOR PHILOSOPHY</span>
+      </section>
+      <section id="visit" class="visit">
+        <div>
+          <p class="kicker">COME SAY HELLO</p>
+          <h2>Your table is waiting.</h2>
+          <p>18 Garden Lane, Berlin<br />Tue–Sun · 12:00–23:00</p>
+        </div>
+        <button class="button book">Reserve your table</button>
+      </section>
+    </main>
+    <footer>
+      <a class="logo">SAVOR<span>●</span></a>
+      <p>Seasonal plates, warm tables.</p>
+      <small>© 2026 Savor. Belal Abed</small>
+    </footer>
+    <dialog id="mealModal">
+      <button class="close" aria-label="Close">×</button>
+      <div id="mealDetail"></div>
+    </dialog>
+    <dialog id="bookingModal">
+      <button class="close" aria-label="Close">×</button>
+      <p class="kicker">RESERVATIONS</p>
+      <h2>Book your table</h2>
+      <form id="bookingForm">
+        <label
+          >Name<input required name="name" placeholder="Your name"
+        /></label>
+        <div>
+          <label>Date<input required type="date" name="date" /></label
+          ><label
+            >Time<select name="time">
+              <option>18:00</option>
+              <option>19:30</option>
+              <option>21:00</option>
+            </select></label
+          >
+        </div>
+        <label
+          >Guests<select name="guests">
+            <option>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5+ guests</option>
+          </select></label
+        ><button class="button">Confirm reservation</button>
+        <p id="bookingMsg"></p>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
