@@ -10,11 +10,11 @@ A modern and responsive restaurant website featuring live menu data, category fi
 
 ### Home Page
 
-![Savor Restaurant Home](assets/savor-home.png)
+![Savor Restaurant Home](assets/savor-home.jpg)
 
 ### Full Page Preview
 
-![Savor Restaurant Full Page](assets/savor-fullpage.png)
+![Savor Restaurant Full Page](assets/savor-fullpage.jpg)
 
 ## Features
 
@@ -45,8 +45,8 @@ A modern and responsive restaurant website featuring live menu data, category fi
 ```text
 savor-restaurant-website/
 ├── assets/
-│   ├── savor-home.png
-│   └── savor-fullpage.png
+│   ├── savor-home.jpg
+│   └── savor-fullpage.jpg
 ├── index.html
 ├── css/
 ├── js/
@@ -67,29 +67,34 @@ Open the project directory:
 cd savor-restaurant-website
 ```
 
-Open `index.html` in your browser or run the project using Live Server.
+Open `index.html` in your browser.
+
+You can also run the project using Live Server in Visual Studio Code.
 
 ## API
 
 Meal data is loaded from [TheMealDB](https://www.themealdb.com/api.php).
+
+The project includes fallback content so the interface remains usable if the API is unavailable.
 
 ## What I Learned
 
 - Fetching and displaying data from a REST API
 - Filtering and searching dynamic content
 - Managing asynchronous JavaScript
-- Building responsive layouts
+- Building responsive layouts with CSS
 - Creating reusable UI components
 - Adding scroll animations and interactive elements
 - Deploying a static website with GitHub Pages
+- Managing project changes with Git and GitHub
 
 ## Future Improvements
 
-- Individual meal details
+- Individual meal details page
 - Functional reservation form
 - User authentication
-- Multiple language support
-- Favorite meals
+- German and English language support
+- Favorite meals functionality
 - Automated tests
 
 ## Author
@@ -100,4 +105,4 @@ Meal data is loaded from [TheMealDB](https://www.themealdb.com/api.php).
 
 ## Disclaimer
 
-This project was created for portfolio and educational purposes. Reservations shown in the interface are demonstrations only.
+This project was created for portfolio and educational purposes. The reservation interface is a demonstration and does not create real bookings.
