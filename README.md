@@ -1,30 +1,103 @@
-# Savor — Restaurant Discovery & Reservation Site
+# Savor Restaurant Website
 
-A responsive restaurant portfolio project built with semantic HTML, modern CSS, and vanilla JavaScript. The menu uses the free TheMealDB REST API.
+A modern and responsive restaurant website featuring live menu data, category filtering, search and smooth animations.
+
+## Live Demo
+
+[View Live Website](https://belal-abed.github.io/savor-restaurant-website/)
+
+## Project Preview
+
+### Home Page
+
+![Savor Restaurant Home](assets/savor-home.png)
+
+### Full Page Preview
+
+![Savor Restaurant Full Page](assets/savor-fullpage.png)
 
 ## Features
 
-- Dynamic dishes from TheMealDB with category filtering and search
-- Dish detail modal with live API lookup
-- Accessible keyboard interactions and responsive layout
-- Functional reservation form with validation and confirmation state
-- API error fallback for a reliable experience
-- Scroll-triggered reveals, hero choreography, hover micro-interactions, page loader and progress indicator
-- Motion accessibility through `prefers-reduced-motion`
+- Live meals loaded from TheMealDB API
+- Menu filtering by category
+- Live meal search
+- Dynamic meal cards
+- Show more functionality
+- Responsive navigation
+- Smooth scrolling and animations
+- Restaurant information and reservation interface
+- Responsive design for desktop, tablet and mobile
+- Fallback content when the API is unavailable
 
-## Run
+## Technologies
 
-Open `index.html` directly, or run `npx serve .` in this folder.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- TheMealDB REST API
+- Fetch API
+- Intersection Observer API
+- Responsive Web Design
+- Git and GitHub Pages
 
-## Project structure
+## Project Structure
 
-- `index.html` — semantic page structure
-- `style.css` — responsive design and animations
-- `script.js` — API integration and interactions
-- `README.md` — documentation
+```text
+savor-restaurant-website/
+├── assets/
+│   ├── savor-home.png
+│   └── savor-fullpage.png
+├── index.html
+├── css/
+├── js/
+└── README.md
+```
 
-## CV description
+## Run Locally
 
-**Savor Restaurant — Interactive Menu App:** Developed a mobile-first restaurant experience using HTML5, CSS3 and vanilla JavaScript; integrated TheMealDB REST API; built menu filtering, live search, dynamic dish details, a validated reservation workflow, scroll-driven animations and accessible motion preferences.
+Clone the repository:
 
-API: https://www.themealdb.com/api.php
+```bash
+git clone https://github.com/belal-Abed/savor-restaurant-website.git
+```
+
+Open the project directory:
+
+```bash
+cd savor-restaurant-website
+```
+
+Open `index.html` in your browser or run the project using Live Server.
+
+## API
+
+Meal data is loaded from [TheMealDB](https://www.themealdb.com/api.php).
+
+## What I Learned
+
+- Fetching and displaying data from a REST API
+- Filtering and searching dynamic content
+- Managing asynchronous JavaScript
+- Building responsive layouts
+- Creating reusable UI components
+- Adding scroll animations and interactive elements
+- Deploying a static website with GitHub Pages
+
+## Future Improvements
+
+- Individual meal details
+- Functional reservation form
+- User authentication
+- Multiple language support
+- Favorite meals
+- Automated tests
+
+## Author
+
+**Belal Abed**
+
+- [GitHub](https://github.com/belal-Abed)
+
+## Disclaimer
+
+This project was created for portfolio and educational purposes. Reservations shown in the interface are demonstrations only.
